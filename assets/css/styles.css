@@ -223,6 +223,7 @@ margin: 0 auto;
 #contact {
   width: 100%;
   height: 100%;
+ 
 }
 
 .section-header {
@@ -241,7 +242,7 @@ margin: 0 auto;
   margin: 0 auto;
   padding: 20px;
   position: relative;
-  max-width: 840px;
+  max-width: 700px;
 }
 
 /* Left contact page */
@@ -605,7 +606,7 @@ margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   grid-gap: 0.5rem;
   border: #7384BC solid 8px ;
@@ -664,6 +665,11 @@ padding: .5rem 3em;
 
 footer{
   background-color: #698ec533;
+}
+@media(max-width: 600px){
+  .item-ico{
+    display: none;
+  }
 }
 
 

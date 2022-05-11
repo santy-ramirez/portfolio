@@ -31,7 +31,8 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-
+<script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+<link rel="stylesheet" href="assets/css/dark.css" media="(prefers-color-scheme: dark)">
 
    <!------------bug------------>
   <!-- <style data_emotion ="css"></style>
@@ -53,14 +54,26 @@ box-shadow: 0 0 0 1px red;
       <nav class="navbar navbar-expand-lg navbar-light nav">
          <div class="container-fluid ">
             <a class="navbar-brand "><img class="logo" src="assets/img/Vector 2.png" alt=""></a>
+
+            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class=" items collapse navbar-collapse justify-content-end" id="navbarScroll">
                <ul class="navbar-nav  my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 150px;">
+                  <li class="nav-item">
+                     <dark-mode-toggle  
+                        id="dark-mode-toggle-2"
+                  ></dark-mode-toggle>
+                  </li>
+                    
+                 <li class="nav-item">
                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
+                  
                   <li class="nav-item">
                      <a class="nav-link" href="#aboutme">Aboutme</a>
                   </li>
@@ -68,7 +81,7 @@ box-shadow: 0 0 0 1px red;
                      <a class="nav-link " href="#skills">Skills</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link " href="#porfolio">Portafolio</a>
+                     <a class="nav-link " href="#portfolio">Portafolio</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link " href="#contact">Contacto</a>
@@ -166,7 +179,7 @@ box-shadow: 0 0 0 1px red;
       </div>
       <!----------------------------------------------PORTAFOLIO---------------------------------------->
       <!-- Swiper -->
-     <div class="seccion">
+     <div id="portfolio" class="seccion">
         <h2 class=" titulo__modi">Proyectos</h2>
        <div class="image-container">
       <div class="image">
@@ -212,29 +225,40 @@ box-shadow: 0 0 0 1px red;
             id="contact-form" class="form-horizontal" style="max-width: 350px;" role="form">
                <div class="form-group">
                   <div class="col-sm-12">
-                     <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                     <input type="text" class="form-control form__dark" id="name" placeholder="NAME" name="name" value="" required>
                   </div>
                </div>
                <div class="form-group">
                   <div class="col-sm-12">
-                     <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value=""
+                     <input type="email" class="form-control form__dark" id="email" placeholder="EMAIL" name="email" value=""
                         required>
                   </div>
                </div>
-               <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+               <textarea class="form-control form__dark" rows="10" placeholder="MESSAGE" name="message" required></textarea>
                <button style="width:100%;margin-top: 8px;" type="submit" class="btne"><span>Enviar</span></button>
             </form>
             <!-- Left contact page -->
             <div class="direct-contact-container">
 
                <ul class="contact-list">
-                  <li class="list-item"><span class="contact-text place"><img width="60px" height="80px"
-                           src="assets/img/Vector 2.png" alt=""></span></li>
-                  <li class="list-item"><span class="contact-text phone"><a 
-                           title="Give me a call">Chaco,Argentina</span></li>
-                           <li class="list-item"><span class="contact-text phone"><a 
-                           ">contactarme por redes sociales</span></li>
+                  <li class="list-item "><span class="contact-text place item-ico"><img width="60px" height="80px"
+                           src="assets/img/Vector 2.png" alt=""></span>
+
+                           <span class="contact-text place"><img width="80px" height="80px"
+                           src="assets/img/IMG_20210511_202027_632.jpg" style="border-radius: 180px;"alt=""></span>
+                        </li>
+                         <li class="list-item"><span class="contact-text phone"><a 
+                           title="Give me a call">Santiago Ramirez</span>
+                        </li>
+                        <li class="list-item"><span class="contact-text phone"><a 
+                           ">Desarrollador web</span>
+                        </li>
+                         <li class="list-item"><span class="contact-text phone"><a 
+                           ">Argentina,Chaco</span>
+                        </li>
                   
+                  <li class="list-item"><p class="contact-text phone"><a 
+                           ">contactarme por redes sociales</p></li>
                </ul>
                <hr>
                <ul class="social-media-list">
@@ -261,10 +285,10 @@ box-shadow: 0 0 0 1px red;
          <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">Home</a></li>
          <li class="nav-item"><a href="#aboutme" class="nav-link px-2 text-muted">Aboutme</a></li>
          <li class="nav-item"><a href="#skills" class="nav-link px-2 text-muted">Skills</a></li>
-         <li class="nav-item"><a href="#portafolio" class="nav-link px-2 text-muted">Portafolio</a></li>
+         <li class="nav-item"><a href="#portfolio" class="nav-link px-2 text-muted">Portafolio</a></li>
          <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contacto</a></li>
       </ul>
-      <p class="text-center text-muted">&copy; 2022 Santiago ramirez, dev</p>
+      <p class="text-center text-muted">&copy; 2022 Santiago ramirez. dev</p>
    </footer>
    <!--<script>
   	 var load = document.getElementById("loading");
