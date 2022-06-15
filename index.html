@@ -34,7 +34,12 @@
 
    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
    <link rel="stylesheet" href="assets/css/dark.css" media="(prefers-color-scheme: dark)">
-
+   <script>
+  	 var load = document.getElementById("loading");
+  function loadfun(){
+    load.style.display = 'none';
+  }
+  </script>
    <!------------bug------------>
    <!-- <style data_emotion ="css"></style>
 <style>
@@ -49,7 +54,8 @@ box-shadow: 0 0 0 1px red;
    <title>SANTY RAMIREZ</title>
 </head>
 
-<body>
+<body onload="loadfun()" >
+   <div id="loading"></div>
    <header>
       <!-------------------------------------EL NAVBAR----------------------------------------------->
       <nav class="navbar navbar-expand-lg navbar-light nav">
@@ -188,21 +194,21 @@ box-shadow: 0 0 0 1px red;
          <div class="image-container">
             <div class="image">
 
-               <img src="assets/img/todo.gif" />
+               <img src="assets/img/todo-min.gif" />
                <div class="detalles">
                   <a href="https://github.com/santy-ramirez/todo-app-v2"><button class="btne__link">ver code</button></a>
                   <a href="https://santy-ramirez.github.io/todo-app-v2/"><button class="btne__link">en vivo</button></a>
                </div>
             </div>
             <div class="image">
-               <img src="assets/img/instagram.gif" />
+               <img src="assets/img/instagram-min.gif" />
                <div class="detalles">
                   <a href="https://github.com/santy-ramirez/instagram-clon"><button class="btne__link">ver code</button></a>
                   <a href="https://instagram-clon-mav36vv8p-santy-ramirez.vercel.app/"><button class="btne__link">en vivo</button></a>
                </div>
             </div>
             <div class="image">
-               <img src="assets/img/blog.gif" />
+               <img src="assets/img/blog-min.gif" />
                <div class="detalles">
                   <a href="https://github.com/santy-ramirez/my-blog"><button class="btne__link">ver code</button></a>
                   <a href="https://blog.santidev.com.ar/"><button class="btne__link">en vivo</button></a>
@@ -292,12 +298,7 @@ box-shadow: 0 0 0 1px red;
       </ul>
       <p class="text-center text-muted">&copy; 2022 Santiago ramirez. dev</p>
    </footer>
-   <!--<script>
-  	 var load = document.getElementById("loading");
-  function loadfun(){
-    load.style.display = 'none';
-  }
-  </script>--->
+ 
    <!-- Option 1: Bootstrap Bundle with Popper -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
@@ -308,7 +309,7 @@ box-shadow: 0 0 0 1px red;
 
 
 
-   <script src="assets/js/main.js" type="text/javascript"></script>
+  
 
 </body>
 
