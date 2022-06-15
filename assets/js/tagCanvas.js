@@ -5,6 +5,7 @@ window.onload = function() {
           // something went wrong, hide the canvas container
           document.getElementById('myCanvasContainer').style.display = 'none';
         }
+      
       };
     var options = { 
     textColour : '#7384BC',
