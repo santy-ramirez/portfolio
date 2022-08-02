@@ -10,9 +10,12 @@ body{
   color: #dcdee0 !important;
 
 }
-.form__dark{
-  background-color: #4a535c !important;
-}
+
 .titulo__modi{
   color: #dcdee0;
+}
+
+.input-black{
+  border-color:#4a535c !important ;
+  background-color: #4a535c !important;
 }

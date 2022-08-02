@@ -37,16 +37,8 @@
    <link rel="stylesheet" href="assets/css/dark.css" media="(prefers-color-scheme: dark)">
 
 
-   <!--<script src="assets/js/main.js" type="text/javascript"></script>--->
-   <!------------bug------------>
-   <!-- <style data_emotion ="css"></style>
-<style>
 
-html * {
-background: rgba(255,0,0,.1);
-box-shadow: 0 0 0 1px red;
-}
-</style>-->
+
 
 
    <title>SANTY RAMIREZ</title>
@@ -76,15 +68,13 @@ box-shadow: 0 0 0 1px red;
                   </li>
 
                   <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                     <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
                   </li>
 
                   <li class="nav-item">
-                     <a class="nav-link" href="#aboutme">Aboutme</a>
+                     <a class="nav-link" href="#aboutme">Sobre Mi</a>
                   </li>
-                  <li class="nav-item">
-                     <a class="nav-link " href="#skills">Skills</a>
-                  </li>
+
                   <li class="nav-item">
                      <a class="nav-link " href="#portfolio">Proyectos</a>
                   </li>
@@ -132,51 +122,29 @@ box-shadow: 0 0 0 1px red;
          </div>
       </div>
       <!------------------ABOUT ME--------------------------->
-      <div id="aboutme" class="aboutme seccion">
-         <h2 class="about__titulo titulo__modi">About me</h2>
-         <div class="about__parrafoyiconos">
-            <p class="about__parrafo parrafo2">Mi Nombre es santiago Ramirez, me considero una persona apasionada por el
-               conocimiento,
-               proactivo,autodidacta.Hace unos años comencé en el desarrollo
-               web,cosa que desde descubrí me gusta mucho hacerlo,actualmente soy estudiante de matemáticas,carrera en
-               la cual me falta
-               materias para obtener el titulo.
-               <a style="text-decoration: none;"
-                  href="https://drive.google.com/drive/folders/1og0gVw3pZJHZr1byFXz-qypWy2yDVayZ"><button
-                     class="btne btne_modi btne-query1"><span>Curriculum</span></button></a>
 
-            </p>
-            <div class="about__iconos">
-               <a style="text-decoration: none;pointer-events: none;" class=" ">
-                  <i class="uil  uil2 uil-book"></i><span class="util_read">+ 2 Estudiando</span>
-               </a>
-               <a style="text-decoration: none;pointer-events: none;" class=" esa">
-                  <i class="uil uil2 uil-folder-medical"></i><span class="util_read">+ 14 Proyetos</span>
-               </a>
-               <a style="text-decoration: none;pointer-events: none;" class=" ">
-                  <i class="uil uil2 uil-draggabledots"></i><span class="util_read">+ 10 tecnologias</span>
-               </a>
-            </div>
-         </div>
-         <a style="text-decoration: none;"
-            href="assets/pdf/cvsantiago.pdf"><button
-               class="btne btne_modi btne-query2"><span>Curriculum</span></button></a>
-      </div>
+
+
 
       <!--------------------------------------------- EL SKILLS---------------------------------------------->
-      <div id="skills" class="container__skills seccion">
-         <h2 class="skills__titulo titulo__modi">Mis skills</h2>
+      <div id="aboutme" class="container__skills seccion">
+         <h2 class="skills__titulo titulo__modi">Sobre Mi</h2>
          <div class="parrafoycanvas">
-            <p class="skills__parrafo parrafo2">Hace mas de dos años empece en el desarrollo web, area en la cual me
-               encuentro constantemente en formación, actualmente tengo conocimientos en HTML, CSS, javascript,
-               preprocesador de css: sass, framework CSS: bootstrap,
-               tailwind,sofware de diseño ui/ux, react, tambien me encuentro estudiando java junto con spring y
-               profundizando en desiño de base de Datos </p>
+            <p class="skills__parrafo parrafo2">
+               Mi Nombre es santiago Ramirez, soy una persona apasionada por el conocimiento,proactivo,autodidacta.
+               Hace
+               unos años comencé en el desarrollo web, area en la cual me encuentro constantemente en formación,
+               actualmente poseo conocimientos en HTML,
+               CSS, javascript,preprocesador de css: sass, bootstrap y react, tambien me encuentro
+               estudiando
+               java junto con spring y
+               profundizando en diseño de base de Datos </p>
             <div id="myCanvasContainer  " class="miCanvas">
                <canvas class=" canvas" height="300" id="myCanvas">
                   <p>Anything in here will be replaced on browsers that support the canvas element</p>
                </canvas>
             </div>
+
             <div id="tags">
                <ul>
                   <li><a href="http://www.google.com" target="_blank">html</a></li>
@@ -230,81 +198,51 @@ box-shadow: 0 0 0 1px red;
                </div>
             </div>
          </div>
-         <div class="contenedor__button"><a style="text-decoration: none;" href="https://github.com/santy-ramirez"><button class="boton_vermas">ver mas</button></a></div>
+         <div class="contenedor__button"><a style="text-decoration: none;"
+               href="https://github.com/santy-ramirez"><button class="boton_vermas">ver mas</button></a></div>
       </div>
       <!----------------------------------------------formulario---------------------------------------->
-      <section id="contact" class="seccion">
+      <section id="contact" class="seccion ">
          <h2 class="section-header titulo__modi">Contacto</h2>
-         <div class="contact-wrapper">
-            <!-- Left contact page -->
-            <form action="https://formspree.io/f/moqrpzdy" method="POST" id="contact-form" class="form-horizontal"
-               style="max-width: 350px;" role="form">
-               <div class="form-group">
-                  <div class="col-sm-12">
-                     <input type="text" class="form-control form__dark" id="name" placeholder="NAME" name="name"
-                        value="" required>
-                  </div>
-               </div>
-               <div class="form-group">
-                  <div class="col-sm-12">
-                     <input type="email" class="form-control form__dark" id="email" placeholder="EMAIL" name="email"
-                        value="" required>
-                  </div>
-               </div>
-               <textarea class="form-control form__dark" rows="10" placeholder="MESSAGE" name="message"
-                  required></textarea>
-               <button style="width:100%;margin-top: 8px;" type="submit" class="btne"><span>Enviar</span></button>
-            </form>
-            <!-- Left contact page -->
-            <div class="direct-contact-container">
-
-               <ul class="contact-list">
-                  <li class="list-item "><span class="contact-text place item-ico"><img width="60px" height="80px"
-                           src="assets/img/Vector 2.png" alt=""></span>
-
-                     <span class="contact-text place"><img width="80px" height="80px"
-                           src="assets/img/IMG_20210511_202027_632.jpg" style="border-radius: 180px;" alt=""></span>
-                  </li>
-                  <li class="list-item"><span class="contact-text phone"><a title="Give me a call">Santiago
-                           Ramirez</span>
-                  </li>
-                  <li class="list-item"><span class="contact-text phone"><a ">Desarrollador web</span>
-                        </li>
-                         <li class=" list-item"><span class="contact-text phone"><a ">Argentina,Chaco</span>
-                        </li>
-                  
-                  <li class=" list-item">
-                                 <p class="contact-text phone"><a ">contactarme por redes sociales</p></li>
-               </ul>
-               <hr>
-               <ul class=" social-media-list">
-                  <li><a href="https://github.com/santy-ramirez" target="_blank" class="contact-icon">
-                        <i class="uil uil-github-alt" aria-hidden="true"></i></a>
-                  </li>
-                  <li><a href="https://twitter.com/santy__dev" target="_blank" class="contact-icon">
-                        <i class="uil uil-twitter-alt" aria-hidden="true"></i></a>
-                  </li>
-                  <li><a href="https://www.linkedin.com/in/santiago--ramirez/" target="_blank" class="contact-icon">
-                        <i class="uil uil-linkedin-alt" aria-hidden="true"></i></a>
-                  </li>
-                  <li><a href="#" target="_blank" class="contact-icon">
-                        <i class="uil uil-instagram-alt" aria-hidden="true"></i></a>
-                  </li>
-               </ul>
+         <form class=" row  row-md-6 justify-content-center" action="https://formspree.io/f/moqrpzdy" method="POST"
+            style="max-width:1000px ;margin:0 auto">
+            <div class="col  col-12 col-md-12">
+               <label for="exampleInputPassword1" class="form-label">Nombre</label>
+               <input type="text" id="name" name="name" value="" required class=" form-control input-black"
+                  style="max-width:100% ;">
             </div>
+            <div class="col  col-12 col-md-12">
+               <label for="exampleInputPassword1" class="form-label">Email</label>
+               <input type="email" id="email" name="email" value="" required class=" form-control input-black"
+                  style="max-width:100% ;" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="col  col-12 col-md-12">
+               <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+               <textarea name="message" required class="form-control input-black" style="max-width:100%"
+                  id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <button style="margin-top: 1rem;background-color:#7384BC ;" type="submit"
+               class="btn btn-primary col  col-12 col-md-12">Enviar</button>
+
+         </form>
          </div>
       </section>
    </main>
    <!--------------------------footer----------------------------->
    <footer class="py-3 ">
       <ul class="nav justify-content-center border-bottom pb-3 ">
-         <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">Home</a></li>
-         <li class="nav-item"><a href="#aboutme" class="nav-link px-2 text-muted">Aboutme</a></li>
-         <li class="nav-item"><a href="#skills" class="nav-link px-2 text-muted">Skills</a></li>
-         <li class="nav-item"><a href="#portfolio" class="nav-link px-2 text-muted">Portafolio</a></li>
+         <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">Inicio</a></li>
+         <li class="nav-item"><a href="#aboutme" class="nav-link px-2 text-muted">Sobre Mi</a></li>
+         <li class="nav-item"><a href="#portfolio" class="nav-link px-2 text-muted">Proyectos</a></li>
          <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contacto</a></li>
       </ul>
       <p class="text-center text-muted">&copy; 2022 Santiago ramirez. dev</p>
+      <p class="text-center text-muted">Previamente diseñado en figma:<a
+            href="https://www.figma.com/file/lZgRmvxRQkPqvU9MOjL8FH/portafolio?node-id=0%3A1"> Mira el proyecto Aqui</a>
+      </p>
+
+
    </footer>
 
    <!-- Option 1: Bootstrap Bundle with Popper -->
