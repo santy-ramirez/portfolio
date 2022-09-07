@@ -1,4 +1,5 @@
 window.onload = function() {
+
         try {
           TagCanvas.Start('myCanvas','tags',options);
         } catch(e) {

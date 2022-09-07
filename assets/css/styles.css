@@ -120,7 +120,7 @@ h2 {
 
 
 header {
-  background-color: #698ec533;
+  
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 
 }
@@ -163,12 +163,9 @@ header {
   max-height: 150px;
 }
 
-.descripcion {
-  margin-top: 1.5rem;
-}
 
 .descripcion__subtitulo {
-  color: #0d6efd;
+  color: #7384BC;
 }
 
 .descripcion__parrafo {
@@ -258,7 +255,7 @@ header {
   }
 
   .descripcion {
-    padding: 4rem 1rem;
+    padding: 0 1rem;
   }
 
   .avatar {
@@ -448,4 +445,5 @@ footer {
   .item-ico {
     display: none;
   }
+
 }
