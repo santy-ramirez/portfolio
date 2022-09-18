@@ -1,11 +1,15 @@
 window.onload = function() {
 
         try {
+          
           TagCanvas.Start('myCanvas','tags',options);
+          
+         
         } catch(e) {
           // something went wrong, hide the canvas container
           document.getElementById('myCanvasContainer').style.display = 'none';
         }
+        hola();
       
       };
     var options = { 
@@ -29,7 +33,10 @@ window.onload = function() {
     depth : 0.8
   }
 
-
+  var load = document.getElementById("loa");
+  var hola = () =>{
+  load.style.display= "none";
+  }
   
 
 

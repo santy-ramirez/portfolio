@@ -11,7 +11,7 @@
     e.target.elements.message.value = '';
   });*/
 
-var load = document.getElementById("loading");
+var load = document.getElementById("loa");
 function loadfun(){
   load.style.display= "none";
 }
